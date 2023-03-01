@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family:'Roboto', sans-serif;
+    background-color: lightgray;
+}
+
+.upper {
+    background-color: #333333;
+}
+
+.nav {
+    height: 80px;
+    width: 1100px;
+    margin: 0 auto;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-right: 300px;
+}
+
+.nav a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.nav-title {
+    margin-left: 210px;
+    flex: 1;
+}
+
+.btn {
+    height: 30px;
+    width: 150px;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    box-shadow: 6px 6px black;
+    margin-right: 65px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col, .col-2 {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+}
+
+.col {
+    flex: 2;
+    padding-left: 200px;
+}
+
+.col-2 {
+    flex: 1;
+    padding-right: 48px;
+}
+
+.user-card, .card {
+    width: 100%;
+    background-color: white;
+    border: 2px solid gray;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-head{
+    background-color: darkturquoise;
+    height: 110px;
+}
+
+.cardbody {
+    padding: 20px;
+}
+
+.educationbody h2, p {
+    padding: 10px;
+}
+
+.dates {
+    color: gray;
+}
+.educationbody p {
+    font-size: large;
+}
+
+.cardbody h1,
+.carrdbody h2,
+.cardbody p {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.usercircle {
+    width: 130px;
+    height: 130px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.mapmark {
+    width: 18px;
+    height: 30px;
+    margin-right: 6px;
+    margin-left: 17px;
+}
+
+.gear{
+    height: 20px;
+    width: 20px;
+    margin-right: 6px;
+}
+
+a {
+    color: blue;
+}
+
+.cardbody{
+    padding: 20px;
+}
+
+.cardbody h1{
+    padding-top: 22px;
+}
+
+.header{
+    background-color: #333333;
+    padding: 14px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.Todds-line, 
+.Phils-line,
+.Adriens-line,
+.Annes-line,
+.Alaynes-line,
+.Arrys-line {
+    border-radius: 50%;
+    height: 45px;
+    padding: 4px;
+    padding-left: 6px;
+}
+
+.user-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.begin, .end {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.footer {
+    margin: 5px;
+    padding: 5px;
+    border-top: 3px black;
+}
+
+.connections-number {
+    background-color: lightslategray;
+    border-radius: 30px;
+    line-height: 20px;
+    padding: 0 10px;
+}

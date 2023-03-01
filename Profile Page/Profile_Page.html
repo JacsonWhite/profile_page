@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profilepage.css">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="NavBar.css">
+    <link rel="stylesheet" href="link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="upper">
+        <div class="nav">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
+            <button class="btn">Sign Out</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--Left Column-->
+            <div class="col">
+                <div class="user-card">
+                    <div class="card-head">
+                        <img src="profile_imgs\jane-m.jpg" alt="user-circle" class="usercircle">
+                    </div>
+                    <div class="cardbody">
+                        <h1 id="username">Jane Doe</h1>
+                        <h2><img src="profile_imgs\map-marker.png" alt="map-marker" class="mapmark"> Seattle</h2>
+                        <p>Developer | Engineer | Problem Solver<br>
+                        Master of Shadows and the Internet!</p>
+                        <p onclick="edit()"><a href="#"><img src="profile_imgs\gear.png" alt="gear" class="gear">edit profile</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        Education
+                    </div>
+                    <div class="educationbody">
+                        <h2>Coding Dojo - Full Stack Bootcamp<br></h2>
+                        <p class="dates">Dec 2019 - Mar 2020</p>
+                        <p>Triple black belt in Python, MERN, and C#...<br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <div class="header">
+                        <span class="connections-number" id="requests">2</span>
+                        Connection Requests
+                    </div>
+                    <div class="card-body">
+                        <div class="user-line" id="request-1">
+                            <span class="begin">
+                                <img src="profile_imgs\todd-s.jpg" alt="Todd" class="Todds-line">
+                                Todd E.
+                            </span>
+                            <span class="end">
+                                <img src="profile_imgs\accept-circle.png" alt="accept" class="Todds-line" onclick='accept("#request-1")'>
+                                <img src="profile_imgs\close-circle.png" alt="decline" class="Todds-line" onclick='ignore("#request-1")'>
+                            </span>
+                        </div>
+                        <div class="user-line" id="request-2">
+                            <span class="begin">
+                                <img src="profile_imgs\phil-s.jpg" alt="Phil" class="Phils-line">
+                                Phil K.
+                            </span>
+                            <span class="end">
+                                <img src="profile_imgs\accept-circle.png" alt="accept" class="Phils-line" onclick='accept("#request-2")'>
+                                <img src="profile_imgs\close-circle.png" alt="decline" class="Phils-line" onclick='ignore("#request-2")'>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <span class="connections-number" id="connections">498</span>
+                        Your Connections
+                    </div>
+                    <div class="card-body">
+                        <div class="user-line">
+                            <span class="begin">
+                                <img src="profile_imgs\adrien-s.jpg" alt="Adrien" class="Adriens-line">
+                                Adrien D.
+                            </span>
+                        </div>
+                        <div class="user-line">
+                            <span class="begin">
+                                <img src="profile_imgs\anne-s.jpg" alt="Anne" class="Annes-line">
+                                Anne J.
+                            </span>
+                        </div>
+                        <div class="user-line">
+                            <span class="begin">
+                                <img src="profile_imgs\alayne-s.jpg" alt="Alayne" class="Alaynes-line">
+                                Alayne T.
+                            </span>
+                        </div>
+                        <div class="user-line">
+                            <span class="begin">
+                                <img src="profile_imgs\arry-s.jpg" alt="Arry" class="Arrys-line">
+                                Arry Y.
+                            </span>
+                        </div>
+                        <div class="footer">
+                            <a href="viewmore">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
